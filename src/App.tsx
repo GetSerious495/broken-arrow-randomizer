@@ -1,6 +1,6 @@
-import React from "react";
-import usFlag from "./assets/images/usa-20flag_png.png";
-import ruFlag from "./assets/images/rus-20flag_png.png";
+import usFlag from "./assets/images/flag/usa-20flag_png.png";
+import ruFlag from "./assets/images/flag/rus-20flag_png.png";
+import NationCard from "./components/NationCard";
 import "./App.css";
 
 const App = () => {
@@ -16,14 +16,8 @@ const App = () => {
         </div>
 
         <div className="nation-select">
-          <div className="nation">
-            <img src={usFlag} alt="USA Flag" className="flag" />
-            <p className="nation-text">USA</p>
-          </div>
-          <div className="nation">
-            <img src={ruFlag} alt="RU Flag" className="flag" />
-            <p className="nation-text">Russia</p>
-          </div>
+          <NationCard nation="USA" flag={usFlag} />
+          <NationCard nation="Russia" flag={ruFlag} />
         </div>
       </div>
     </>
