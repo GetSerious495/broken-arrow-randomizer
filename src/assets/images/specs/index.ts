@@ -1,0 +1,10 @@
+export {default as airborne} from './airborne.png';
+export {default as armored} from './armored.png';
+export {default as marines} from './marines.png';
+export {default as stryker} from './stryker.png';
+export {default as sof} from './sof.png';
+export {default as vdv} from './vdv.png';
+export {default as guards} from './guards.png';
+export {default as motostrelki} from './motostrelki.png';
+export {default as morskaya} from './morskaya.png';
+export {default as mech} from './mech.png';
