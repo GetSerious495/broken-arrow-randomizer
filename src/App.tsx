@@ -25,6 +25,11 @@ const App = () => {
             spec3={specImages.airborne}
             spec4={specImages.stryker}
             spec5={specImages.sof}
+            specName1="Marines"
+            specName2="Armored"
+            specName3="Airborne"
+            specName4="Stryker"
+            specName5="SOF"
           />
           <NationCard
             nation="Russia"
@@ -34,6 +39,11 @@ const App = () => {
             spec3={specImages.motostrelki}
             spec4={specImages.morskaya}
             spec5={specImages.mech}
+            specName1="VDV"
+            specName2="Guards"
+            specName3="Motostrelki"
+            specName4="Morskaya"
+            specName5="Mech"
           />
         </div>
       </div>
