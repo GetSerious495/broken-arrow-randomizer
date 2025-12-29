@@ -8,10 +8,22 @@ interface NationCardProps {
 
 function NationCard(props: NationCardProps) {
   const [modal, setModal] = useState(false);
+  const [selectedSpecs, setSelectedSpecs] = useState<number[]>([]);
 
   const toggleModal = () => {
     setModal(!modal);
     console.log("Modal toggled:", !modal);
+  };
+
+  const toggleSpec = (index: number) => {
+    setSelectedSpecs((prev) => {
+      if (prev.includes(index)) {
+        return prev.filter((i) => i !== index);
+      } else if (prev.length < 2) {
+        return [...prev, index];
+      }
+      return prev;
+    });
   };
 
   return (
@@ -38,7 +50,13 @@ function NationCard(props: NationCardProps) {
             </p>
 
             {props.specs.map((spec, index) => (
-              <button key={index} className="button-spec">
+              <button
+                key={index}
+                className={`button-spec ${
+                  selectedSpecs.includes(index) ? "selected" : ""
+                }`}
+                onClick={() => toggleSpec(index)}
+              >
                 <img src={spec.src} alt="" className="spec-icon" />
                 <p className="button-spec-title">{spec.name}</p>
               </button>

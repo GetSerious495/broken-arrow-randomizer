@@ -74,6 +74,11 @@
   cursor: pointer;
 }
 
+.button-spec.selected {
+  background-color: rgba(0, 255, 0, 0.5); /* Green tint for selected */
+  border: 2px solid #00ff00;
+}
+
 .button-spec img {
   grid-column: 1; 
   justify-self: start;
