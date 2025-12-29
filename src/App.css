@@ -97,3 +97,12 @@ body {
   margin-left: 0.15rem;
   margin-right: 0.15rem;
 }
+
+.button-spec{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
