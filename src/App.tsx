@@ -20,30 +20,24 @@ const App = () => {
           <NationCard
             nation="USA"
             flag={usFlag}
-            spec1={specImages.marines}
-            spec2={specImages.armored}
-            spec3={specImages.airborne}
-            spec4={specImages.stryker}
-            spec5={specImages.sof}
-            specName1="Marines"
-            specName2="Armored"
-            specName3="Airborne"
-            specName4="Stryker"
-            specName5="SOF"
+            specs={[
+              { src: specImages.marines, name: "Marines" },
+              { src: specImages.armored, name: "Armored" },
+              { src: specImages.airborne, name: "Airborne" },
+              { src: specImages.stryker, name: "Stryker" },
+              { src: specImages.sof, name: "SOF" },
+            ]}
           />
           <NationCard
             nation="Russia"
             flag={ruFlag}
-            spec1={specImages.vdv}
-            spec2={specImages.guards}
-            spec3={specImages.motostrelki}
-            spec4={specImages.morskaya}
-            spec5={specImages.mech}
-            specName1="VDV"
-            specName2="Guards"
-            specName3="Motostrelki"
-            specName4="Morskaya"
-            specName5="Mech"
+            specs={[
+              { src: specImages.vdv, name: "VDV" },
+              { src: specImages.guards, name: "Guards" },
+              { src: specImages.motostrelki, name: "Motostrelki" },
+              { src: specImages.morskaya, name: "Morskaya" },
+              { src: specImages.mech, name: "Mech" },
+            ]}
           />
         </div>
       </div>
